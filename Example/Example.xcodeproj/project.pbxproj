@@ -19,8 +19,13 @@
 		EA43436418DF09CB0015685D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43436318DF09CB0015685D /* XCTest.framework */; };
 		EA43436518DF09CB0015685D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43434418DF09CB0015685D /* Foundation.framework */; };
 		EA43436618DF09CB0015685D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43434818DF09CB0015685D /* UIKit.framework */; };
-		EA43436E18DF09CB0015685D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA43436C18DF09CB0015685D /* InfoPlist.strings */; };
-		EA43437018DF09CB0015685D /* DZLPlistObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43436F18DF09CB0015685D /* DZLPlistObjectTests.m */; };
+		EA43437C18DF09F80015685D /* DZLPlistObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43437B18DF09F80015685D /* DZLPlistObject.m */; };
+		EA43437F18DF0A420015685D /* DZLPlistObject+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = EA43437E18DF0A420015685D /* DZLPlistObject+Conversion.m */; };
+		EA43438118DF0A5D0015685D /* Theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA43438018DF0A5D0015685D /* Theme.plist */; };
+		EA4343B218DF12470015685D /* GroupedLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4343AB18DF12470015685D /* GroupedLabels.m */; };
+		EA4343B318DF12470015685D /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4343AD18DF12470015685D /* Label.m */; };
+		EA4343B418DF12470015685D /* LabelList.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4343AF18DF12470015685D /* LabelList.m */; };
+		EA4343B518DF12470015685D /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4343B118DF12470015685D /* Theme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,25 +39,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EA43434118DF09CB0015685D /* DZLPlistObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZLPlistObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA43434118DF09CB0015685D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA43434418DF09CB0015685D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA43434618DF09CB0015685D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EA43434818DF09CB0015685D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		EA43434C18DF09CB0015685D /* DZLPlistObject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DZLPlistObject-Info.plist"; sourceTree = "<group>"; };
+		EA43434C18DF09CB0015685D /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
 		EA43434E18DF09CB0015685D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA43435018DF09CB0015685D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EA43435218DF09CB0015685D /* DZLPlistObject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DZLPlistObject-Prefix.pch"; sourceTree = "<group>"; };
+		EA43435218DF09CB0015685D /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
 		EA43435318DF09CB0015685D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA43435418DF09CB0015685D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EA43435718DF09CB0015685D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA43435918DF09CB0015685D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EA43435A18DF09CB0015685D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EA43435C18DF09CB0015685D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EA43436218DF09CB0015685D /* DZLPlistObjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZLPlistObjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA43436218DF09CB0015685D /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA43436318DF09CB0015685D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EA43436B18DF09CB0015685D /* DZLPlistObjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DZLPlistObjectTests-Info.plist"; sourceTree = "<group>"; };
-		EA43436D18DF09CB0015685D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		EA43436F18DF09CB0015685D /* DZLPlistObjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZLPlistObjectTests.m; sourceTree = "<group>"; };
+		EA43437A18DF09F80015685D /* DZLPlistObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZLPlistObject.h; sourceTree = "<group>"; };
+		EA43437B18DF09F80015685D /* DZLPlistObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZLPlistObject.m; sourceTree = "<group>"; };
+		EA43437D18DF0A420015685D /* DZLPlistObject+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DZLPlistObject+Conversion.h"; sourceTree = "<group>"; };
+		EA43437E18DF0A420015685D /* DZLPlistObject+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DZLPlistObject+Conversion.m"; sourceTree = "<group>"; };
+		EA43438018DF0A5D0015685D /* Theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Theme.plist; sourceTree = "<group>"; };
+		EA4343AA18DF12470015685D /* GroupedLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedLabels.h; sourceTree = "<group>"; };
+		EA4343AB18DF12470015685D /* GroupedLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedLabels.m; sourceTree = "<group>"; };
+		EA4343AC18DF12470015685D /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		EA4343AD18DF12470015685D /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		EA4343AE18DF12470015685D /* LabelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelList.h; sourceTree = "<group>"; };
+		EA4343AF18DF12470015685D /* LabelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelList.m; sourceTree = "<group>"; };
+		EA4343B018DF12470015685D /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		EA4343B118DF12470015685D /* Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +97,8 @@
 		EA43433818DF09CB0015685D = {
 			isa = PBXGroup;
 			children = (
-				EA43434A18DF09CB0015685D /* DZLPlistObject */,
-				EA43436918DF09CB0015685D /* DZLPlistObjectTests */,
+				EA43437918DF09DA0015685D /* DZLPlistObject */,
+				EA43434A18DF09CB0015685D /* Example */,
 				EA43434318DF09CB0015685D /* Frameworks */,
 				EA43434218DF09CB0015685D /* Products */,
 			);
@@ -92,8 +107,8 @@
 		EA43434218DF09CB0015685D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA43434118DF09CB0015685D /* DZLPlistObject.app */,
-				EA43436218DF09CB0015685D /* DZLPlistObjectTests.xctest */,
+				EA43434118DF09CB0015685D /* Example.app */,
+				EA43436218DF09CB0015685D /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +124,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EA43434A18DF09CB0015685D /* DZLPlistObject */ = {
+		EA43434A18DF09CB0015685D /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				EA43435318DF09CB0015685D /* AppDelegate.h */,
@@ -117,48 +132,60 @@
 				EA43435618DF09CB0015685D /* Main.storyboard */,
 				EA43435918DF09CB0015685D /* ViewController.h */,
 				EA43435A18DF09CB0015685D /* ViewController.m */,
+				EA43437D18DF0A420015685D /* DZLPlistObject+Conversion.h */,
+				EA43437E18DF0A420015685D /* DZLPlistObject+Conversion.m */,
 				EA43435C18DF09CB0015685D /* Images.xcassets */,
 				EA43434B18DF09CB0015685D /* Supporting Files */,
 			);
-			path = DZLPlistObject;
+			path = Example;
 			sourceTree = "<group>";
 		};
 		EA43434B18DF09CB0015685D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA43434C18DF09CB0015685D /* DZLPlistObject-Info.plist */,
+				EA43438418DF0BDB0015685D /* Theme */,
+				EA43438018DF0A5D0015685D /* Theme.plist */,
+				EA43434C18DF09CB0015685D /* Example-Info.plist */,
 				EA43434D18DF09CB0015685D /* InfoPlist.strings */,
 				EA43435018DF09CB0015685D /* main.m */,
-				EA43435218DF09CB0015685D /* DZLPlistObject-Prefix.pch */,
+				EA43435218DF09CB0015685D /* Example-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EA43436918DF09CB0015685D /* DZLPlistObjectTests */ = {
+		EA43437918DF09DA0015685D /* DZLPlistObject */ = {
 			isa = PBXGroup;
 			children = (
-				EA43436F18DF09CB0015685D /* DZLPlistObjectTests.m */,
-				EA43436A18DF09CB0015685D /* Supporting Files */,
+				EA43437A18DF09F80015685D /* DZLPlistObject.h */,
+				EA43437B18DF09F80015685D /* DZLPlistObject.m */,
 			);
-			path = DZLPlistObjectTests;
+			name = DZLPlistObject;
+			path = ../DZLPlistObject;
 			sourceTree = "<group>";
 		};
-		EA43436A18DF09CB0015685D /* Supporting Files */ = {
+		EA43438418DF0BDB0015685D /* Theme */ = {
 			isa = PBXGroup;
 			children = (
-				EA43436B18DF09CB0015685D /* DZLPlistObjectTests-Info.plist */,
-				EA43436C18DF09CB0015685D /* InfoPlist.strings */,
+				EA4343AA18DF12470015685D /* GroupedLabels.h */,
+				EA4343AB18DF12470015685D /* GroupedLabels.m */,
+				EA4343AC18DF12470015685D /* Label.h */,
+				EA4343AD18DF12470015685D /* Label.m */,
+				EA4343AE18DF12470015685D /* LabelList.h */,
+				EA4343AF18DF12470015685D /* LabelList.m */,
+				EA4343B018DF12470015685D /* Theme.h */,
+				EA4343B118DF12470015685D /* Theme.m */,
 			);
-			name = "Supporting Files";
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA43434018DF09CB0015685D /* DZLPlistObject */ = {
+		EA43434018DF09CB0015685D /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA43437318DF09CB0015685D /* Build configuration list for PBXNativeTarget "DZLPlistObject" */;
+			buildConfigurationList = EA43437318DF09CB0015685D /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				EA43438318DF0A9E0015685D /* ShellScript */,
 				EA43433D18DF09CB0015685D /* Sources */,
 				EA43433E18DF09CB0015685D /* Frameworks */,
 				EA43433F18DF09CB0015685D /* Resources */,
@@ -167,14 +194,14 @@
 			);
 			dependencies = (
 			);
-			name = DZLPlistObject;
+			name = Example;
 			productName = DZLPlistObject;
-			productReference = EA43434118DF09CB0015685D /* DZLPlistObject.app */;
+			productReference = EA43434118DF09CB0015685D /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA43436118DF09CB0015685D /* DZLPlistObjectTests */ = {
+		EA43436118DF09CB0015685D /* ExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA43437618DF09CB0015685D /* Build configuration list for PBXNativeTarget "DZLPlistObjectTests" */;
+			buildConfigurationList = EA43437618DF09CB0015685D /* Build configuration list for PBXNativeTarget "ExampleTests" */;
 			buildPhases = (
 				EA43435E18DF09CB0015685D /* Sources */,
 				EA43435F18DF09CB0015685D /* Frameworks */,
@@ -185,9 +212,9 @@
 			dependencies = (
 				EA43436818DF09CB0015685D /* PBXTargetDependency */,
 			);
-			name = DZLPlistObjectTests;
+			name = ExampleTests;
 			productName = DZLPlistObjectTests;
-			productReference = EA43436218DF09CB0015685D /* DZLPlistObjectTests.xctest */;
+			productReference = EA43436218DF09CB0015685D /* ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA43433C18DF09CB0015685D /* Build configuration list for PBXProject "DZLPlistObject" */;
+			buildConfigurationList = EA43433C18DF09CB0015685D /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,8 +244,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA43434018DF09CB0015685D /* DZLPlistObject */,
-				EA43436118DF09CB0015685D /* DZLPlistObjectTests */,
+				EA43434018DF09CB0015685D /* Example */,
+				EA43436118DF09CB0015685D /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA43438118DF0A5D0015685D /* Theme.plist in Resources */,
 				EA43435D18DF09CB0015685D /* Images.xcassets in Resources */,
 				EA43434F18DF09CB0015685D /* InfoPlist.strings in Resources */,
 				EA43435818DF09CB0015685D /* Main.storyboard in Resources */,
@@ -238,20 +266,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA43436E18DF09CB0015685D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA43438318DF0A9E0015685D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=$PATH:/usr/local/bin\nplogen -o$SRCROOT/Example/Theme -p$SRCROOT/Example/Theme.plist -cTheme\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA43433D18DF09CB0015685D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA43437C18DF09F80015685D /* DZLPlistObject.m in Sources */,
+				EA4343B218DF12470015685D /* GroupedLabels.m in Sources */,
+				EA4343B418DF12470015685D /* LabelList.m in Sources */,
+				EA4343B518DF12470015685D /* Theme.m in Sources */,
 				EA43435B18DF09CB0015685D /* ViewController.m in Sources */,
+				EA4343B318DF12470015685D /* Label.m in Sources */,
 				EA43435518DF09CB0015685D /* AppDelegate.m in Sources */,
 				EA43435118DF09CB0015685D /* main.m in Sources */,
+				EA43437F18DF0A420015685D /* DZLPlistObject+Conversion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA43437018DF09CB0015685D /* DZLPlistObjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +316,7 @@
 /* Begin PBXTargetDependency section */
 		EA43436818DF09CB0015685D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA43434018DF09CB0015685D /* DZLPlistObject */;
+			target = EA43434018DF09CB0015685D /* Example */;
 			targetProxy = EA43436718DF09CB0015685D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -288,14 +336,6 @@
 				EA43435718DF09CB0015685D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EA43436C18DF09CB0015685D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA43436D18DF09CB0015685D /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -377,9 +417,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DZLPlistObject/DZLPlistObject-Prefix.pch";
-				INFOPLIST_FILE = "DZLPlistObject/DZLPlistObject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				PRODUCT_NAME = Example;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,9 +430,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DZLPlistObject/DZLPlistObject-Prefix.pch";
-				INFOPLIST_FILE = "DZLPlistObject/DZLPlistObject-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				PRODUCT_NAME = Example;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -412,8 +452,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DZLPlistObjectTests/DZLPlistObjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DZLPlistObjectTests/ExampleTests-Info.plist";
+				PRODUCT_NAME = ExampleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -430,8 +470,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DZLPlistObject/DZLPlistObject-Prefix.pch";
-				INFOPLIST_FILE = "DZLPlistObjectTests/DZLPlistObjectTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DZLPlistObjectTests/ExampleTests-Info.plist";
+				PRODUCT_NAME = ExampleTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -440,7 +480,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA43433C18DF09CB0015685D /* Build configuration list for PBXProject "DZLPlistObject" */ = {
+		EA43433C18DF09CB0015685D /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA43437118DF09CB0015685D /* Debug */,
@@ -449,21 +489,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA43437318DF09CB0015685D /* Build configuration list for PBXNativeTarget "DZLPlistObject" */ = {
+		EA43437318DF09CB0015685D /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA43437418DF09CB0015685D /* Debug */,
 				EA43437518DF09CB0015685D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		EA43437618DF09CB0015685D /* Build configuration list for PBXNativeTarget "DZLPlistObjectTests" */ = {
+		EA43437618DF09CB0015685D /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA43437718DF09CB0015685D /* Debug */,
 				EA43437818DF09CB0015685D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
